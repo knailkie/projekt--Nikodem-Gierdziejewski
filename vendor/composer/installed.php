@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => '__root__',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => NULL,
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => '6e66ba15c8fad5031baed2e4c5e42cd2238c31fe',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => NULL,
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '6e66ba15c8fad5031baed2e4c5e42cd2238c31fe',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -25,6 +25,15 @@
             'reference' => '71036be8be02bf93735c47b0b745f722efbc729f',
             'type' => 'library',
             'install_path' => __DIR__ . '/../smarty/smarty',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'steampixel/simple-php-router' => array(
+            'pretty_version' => '0.7.1',
+            'version' => '0.7.1.0',
+            'reference' => 'c996d75b34c2c6da45d4dc737f61c0ee8fed5d2b',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../steampixel/simple-php-router',
             'aliases' => array(),
             'dev_requirement' => false,
         ),

@@ -6,6 +6,16 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitdf984ec41b2a0b5de7ab9d86bffa0e31
 {
+    public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Steampixel' => 
+            array (
+                0 => __DIR__ . '/..' . '/steampixel/simple-php-router/src',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
@@ -182,6 +192,7 @@ class ComposerStaticInitdf984ec41b2a0b5de7ab9d86bffa0e31
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixesPsr0 = ComposerStaticInitdf984ec41b2a0b5de7ab9d86bffa0e31::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitdf984ec41b2a0b5de7ab9d86bffa0e31::$classMap;
 
         }, null, ClassLoader::class);
