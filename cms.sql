@@ -99,7 +99,7 @@ ALTER TABLE `post`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `rating_id` (`vote_id`);
+  ADD KEY `vote_id` (`vote_id`);
 
 --
 -- AUTO_INCREMENT dla zrzuconych tabel
